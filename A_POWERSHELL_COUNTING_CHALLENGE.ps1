@@ -20,10 +20,13 @@ write-host $counter
 
 # Method 2
 $Counter = 0
-$values = 1..100
-For($i in $values)
+$Values = 1..100
+foreach($x in $values)
     {
-        if($_ % 2 -eq 0 ) {$counter = $counter + $_}
+        if($x % 2 -eq 0 ) 
+        {
+            $counter = $counter + $x
+        }
     }
 write-host $counter
 
